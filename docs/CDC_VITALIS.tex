@@ -1,0 +1,288 @@
+﻿\documentclass[12pt,a4paper]{report}  
+\usepackage[utf8]{inputenc}  
+\usepackage[T1]{fontenc}  
+\usepackage[french]{babel}  
+\usepackage{setspace}  
+\usepackage{geometry}  
+\usepackage{titlesec}  
+\usepackage{lmodern}  
+\usepackage{array}  
+\usepackage{longtable}  
+\usepackage{hyperref}  
+
+% Mise en page et police  
+\geometry{top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm}  
+\renewcommand{\familydefault}{\rmdefault}  
+\onehalfspacing  
+\titleformat{\chapter}[block]{\bfseries\Large}{\thechapter.}{1em}{}  
+
+\begin{document}  
+
+% ===================== PAGE DE GARDE =====================  
+\begin{center}  
+\textbf{\large RÉPUBLIQUE DU CAMEROUN}\\[0.2cm]  
+\textbf{Paix – Travail – Patrie}\\[0.5cm]  
+\textbf{MINISTÈRE DE L’ENSEIGNEMENT SUPÉRIEUR (MINESUP)}\\[0.2cm]  
+\textbf{École Nationale Supérieure Polytechnique de Yaoundé (ENSPY)}\\[0.2cm]  
+\textbf{Département de Génie Informatique}\\[1.5cm]  
+{\Large \textbf{CAHIER DES CHARGES}}\\[0.5cm]  
+{\large \textbf{Plateforme VITALIS}}\\[1.5cm]  
+
+\textbf{Présenté par :}\\[0.3cm]  
+23P041 – TCHOUAMENI DJOMO HALLAN KABREL\\
+23P123 – TCHONKAHUI FOTSO GUY LANDRY\\
+23P131 – FOPA LAFOUA THERY STEVE\\
+23P124 – FEGAING MAFOSSI LESLIE GANINA\\
+23P120 – KENFACK SOPJEU AUDREY LAURELLE\\
+23P143 – AWAGMO AGUEGMO FRESNEL LOÏC\\[1cm]  
+
+\textbf{Encadré par :}\\[0.3cm]  
+Ing. BAKADAL JEAN\\[1.5cm]  
+
+Année académique : 2025–2026\\
+Lieu : Yaoundé, Cameroun\\
+Date : Octobre 2025  
+\end{center}  
+
+\newpage  
+\tableofcontents  
+\newpage  
+
+% ===================== CONTENU =====================  
+
+\section*{Présentation générale du projet}  
+\addcontentsline{toc}{section}{Présentation générale du projet}  
+
+Le projet intitulé « Plateforme numérique de suivi des patients » s'inscrit dans la dynamique actuelle de transformation digitale du secteur de la santé.  
+Face à la multiplicité des établissements médicaux, à la dispersion des informations cliniques et à l'absence d'un système centralisé de gestion du parcours patient, il devient essentiel de concevoir un outil moderne, intelligent et interconnecté, garantissant un suivi continu, personnalisé et sécurisé des patients.  
+
+Cette plateforme vise à offrir un environnement numérique complet permettant :  
+\begin{itemize}
+    \item aux professionnels de santé d'assurer un suivi rigoureux et structuré ;
+    \item aux patients de gérer leurs données de santé en toute autonomie ;
+    \item aux administrateurs de superviser l'ensemble du système de manière centralisée.
+\end{itemize}
+
+La plateforme VITALIS prend en charge spécifiquement le suivi des patients atteints de trois pathologies majeures : le SIDA, le Cancer et le Diabète. Le suivi s'effectue à la fois en ligne (via l'application) et à l'hôpital, garantissant une continuité des soins optimale.
+
+Accessible sur application web et mobile, la solution garantira une portabilité optimale et une communication fluide entre tous les acteurs du système de santé.  
+
+\newpage  
+\section*{Problématique}  
+\addcontentsline{toc}{section}{Problématique}  
+
+Les systèmes actuels de suivi médical présentent plusieurs limites :  
+\begin{itemize}
+    \item Dossiers médicaux éparpillés entre plusieurs structures ;
+    \item Manque de communication directe entre médecin et patient ;
+    \item Retards dans la planification des rendez-vous et la transmission des ordonnances ;
+    \item Risques de perte ou d’altération des données sensibles.
+\end{itemize}
+
+Ces faiblesses nuisent à la qualité, la continuité et la traçabilité des soins.  
+La plateforme proposée vient répondre à ces défis en centralisant les informations médicales, en automatisant les rappels de soins et en favorisant une interaction en temps réel entre les différents intervenants du parcours thérapeutique.  
+
+\newpage  
+\section*{Objectifs du projet}  
+\addcontentsline{toc}{section}{Objectifs du projet}  
+
+\subsection*{Objectif général}  
+Concevoir, développer et déployer une plateforme numérique ergonomique, sécurisée et interconnectée pour le suivi des patients, accessible sur le web et sur mobile.  
+
+\subsection*{Objectifs spécifiques}  
+\begin{itemize}
+    \item Créer une maquette fonctionnelle et cohérente sur Figma ;
+    \item Développer une application web et une application mobile synchronisées ;
+    \item Mettre en place un système de gestion des données médicales sécurisé ;
+    \item Permettre le suivi en temps réel des paramètres de santé et des rendez-vous ;
+    \item Intégrer un chatbot médical intelligent pour assister les patients et le personnel médical ;
+    \item Garantir la confidentialité et la conformité aux normes internationales (RGPD, HIPAA).
+\end{itemize}
+
+\newpage  
+\section*{Périmètre du projet}  
+\addcontentsline{toc}{section}{Périmètre du projet}  
+
+\subsection*{Inclus}  
+\begin{itemize}
+    \item Modélisation complète sur Figma (UI/UX) ;
+    \item Utilisation d’une charte graphique bleue et blanche pour un design sobre et professionnel ;
+    \item Développement du front-end (ReactJS pour le web, Flutter pour le mobile) ;
+    \item Développement du back-end (Django ou Node.js) ;
+    \item Mise en place d’une base de données centralisée (PostgreSQL ou MongoDB) ;
+    \item Intégration du chatbot et de la messagerie sécurisée ;
+    \item Tests unitaires, d’intégration et de sécurité ;
+    \item Déploiement sur serveur cloud (AWS, Azure ou OVH) ;
+    \item Formation des utilisateurs et documentation.
+\end{itemize}
+
+\subsection*{Exclus}  
+\begin{itemize}
+    \item Fourniture de matériel médical connecté ;
+    \item Intégration avec des systèmes hospitaliers externes (prévue pour la phase 2).
+\end{itemize}
+
+\newpage  
+\section*{Acteurs et rôles}  
+\addcontentsline{toc}{section}{Acteurs et rôles}  
+
+\begin{longtable}{|p{5cm}|p{10cm}|}  
+\hline  
+\textbf{Acteur} & \textbf{Rôle principal} \\  
+\hline  
+Patient (Malade) & Accès exclusif au dossier personnel, saisie de données de santé, réception des rappels et alertes, interaction avec le chatbot. \textbf{Accès restreint :} seuls les patients atteints de SIDA, Cancer ou Diabète peuvent accéder à l'application après validation de leur dossier par l'hôpital. Les patients ne peuvent pas voir les autres patients. \\  
+\hline  
+Médecin / Infirmier & Mise à jour des informations médicales, suivi des patients, communication sécurisée, supervision du chatbot. \textbf{Accès restreint :} les médecins ne peuvent accéder qu'au carnet de santé des patients qu'ils suivent personnellement. \\  
+\hline  
+Hôpital & Validation et transfert des dossiers médicaux des patients pour leur inscription sur la plateforme. L'hôpital est responsable de prouver la véracité de la maladie avant l'ajout d'un patient dans le système. \\  
+\hline  
+Administrateur & Gestion des utilisateurs, des droits d'accès et des paramètres du système. \\  
+\hline  
+Équipe technique & Conception, développement et maintenance de la solution technique. \\  
+\hline  
+Designer UX/UI & Conception des maquettes et prototypes sur Figma (bleu et blanc). \\  
+\hline  
+Chef de projet & Planification, supervision et validation des différentes phases. \\  
+\hline  
+\end{longtable}  
+
+\newpage  
+\section*{Description fonctionnelle}  
+\addcontentsline{toc}{section}{Description fonctionnelle}  
+
+\subsection*{Maladies prises en charge}  
+La plateforme VITALIS prend en charge exclusivement le suivi des patients atteints des pathologies suivantes :
+\begin{itemize}
+    \item \textbf{SIDA} (Syndrome d'Immunodéficience Acquise) ;
+    \item \textbf{Cancer} ;
+    \item \textbf{Diabète}.
+\end{itemize}
+
+\subsection*{Espace Patient}  
+\begin{itemize}
+    \item \textbf{Inscription et validation :} L'inscription d'un patient nécessite le transfert de son dossier médical par l'hôpital pour prouver la véracité de la maladie (SIDA, Cancer ou Diabète). Seuls les patients validés peuvent accéder à l'application.
+    \item Gestion du profil personnel (accès exclusif à ses propres données) ;
+    \item Historique des consultations et traitements ;
+    \item Suivi des paramètres vitaux ;
+    \item Notifications de rendez-vous et rappels de traitement ;
+    \item Chatbot intégré pour répondre aux questions courantes ;
+    \item Messagerie sécurisée avec le personnel médical ;
+    \item \textbf{Isolation des données :} Les patients ne peuvent pas voir les autres patients ni accéder à leurs informations.
+\end{itemize}
+
+\subsection*{Espace Médecin}  
+\begin{itemize}
+    \item \textbf{Accès restreint :} Les médecins ne peuvent accéder qu'au carnet de santé des patients qu'ils suivent personnellement.
+    \item Gestion des dossiers patients (uniquement ceux qu'ils entretiennent) ;
+    \item Visualisation des indicateurs de santé ;
+    \item Messagerie interne sécurisée ;
+    \item Génération de rapports médicaux ;
+    \item Accès au tableau de bord analytique du chatbot.
+\end{itemize}
+
+\subsection*{Espace Hôpital}  
+\begin{itemize}
+    \item Transfert et validation des dossiers médicaux des patients ;
+    \item Vérification de la véracité de la maladie avant l'ajout d'un patient dans le système ;
+    \item Gestion des employés médicaux (médecins, infirmiers) ;
+    \item Suivi des patients suivis par l'établissement.
+\end{itemize}
+
+\subsection*{Espace Administrateur}  
+\begin{itemize}
+    \item Supervision du système ;
+    \item Gestion des utilisateurs et des rôles ;
+    \item Paramétrage et sécurité ;
+    \item Tableaux de bord statistiques.
+\end{itemize}
+\newpage
+\section*{Flux de fonctionnement} 
+\addcontentsline{toc}{section}{Flux de fonctionnement}
+\begin{itemize}
+    \item Un hôpital/Directeur s'inscrit sur la plateforme et reçoit un identifiant unique ;
+    \item Les employés de cet hôpital (médecins, infirmiers) s'inscrivent individuellement et obtiennent leurs identifiants ;
+    \item \textbf{Processus d'ajout d'un patient :} Lorsqu'un cas de maladie (SIDA, Cancer ou Diabète) est détecté, l'hôpital transfère le dossier médical du patient dans le système pour prouver la véracité de la maladie. Une fois le dossier validé, le patient peut être ajouté à la plateforme et recevoir ses identifiants d'accès.
+    \item Le patient accède exclusivement à son propre dossier médical (pas d'accès aux autres patients) ;
+    \item Le médecin accède uniquement au carnet de santé des patients qu'il suit personnellement ;
+    \item Le suivi s'effectue à la fois en ligne (via l'application) et à l'hôpital ;
+    \item Les données sont transmises automatiquement à la base nationale ;
+    \item L'administrateur peut consulter les tableaux de bord en temps réel ;
+    \item En cas de besoin, un employé ou un patient peut interagir avec le Chatbot pour obtenir de l'aide médicale ;
+    \item Les décisions de subvention peuvent être prises selon les statistiques du moment.
+\end{itemize}
+\newpage  
+\section*{Étapes du projet}  
+\addcontentsline{toc}{section}{Étapes du projet}  
+
+\subsection*{Étape 1 : Modélisation sur Figma}  
+\begin{itemize}
+    \item Création des maquettes haute fidélité (patient, médecin, administrateur) ;
+    \item Définition de la charte graphique bleue et blanche : couleurs, typographies, icônes ;
+    \item Structuration de la navigation (prototypes interactifs) ;
+    \item Tests UX auprès d’utilisateurs cibles.
+\end{itemize}
+
+\subsection*{Étape 2 : Conception technique}  
+\begin{itemize}
+    \item Modélisation de la base de données ;
+    \item Définition de l’architecture (client-serveur + API REST) ;
+    \item Choix des technologies principales (React, Flutter, Django, PostgreSQL) ;
+    \item Planification de l’intégration du chatbot via une API ou un modèle local.
+\end{itemize}
+
+\subsection*{Étape 3 : Développement}  
+\begin{enumerate}
+    \item Développement front-end Web (ReactJS) ;
+    \item Développement application mobile (Flutter) ;
+    \item Développement back-end et API REST (Django / Node.js) ;
+    \item Intégration et sécurisation de la base de données (PostgreSQL) ;
+    \item Implémentation du chatbot intelligent.
+\end{enumerate}
+
+\subsection*{Étape 4 : Tests et validation}  
+\begin{itemize}
+    \item Tests unitaires et d’intégration ;
+    \item Tests de performance et de sécurité ;
+    \item Tests d’interaction du chatbot ;
+    \item Validation fonctionnelle auprès d’un centre de santé pilote.
+\end{itemize}
+
+\subsection*{Étape 5 : Déploiement et mise en service}  
+\begin{itemize}
+    \item Hébergement sur serveur cloud sécurisé ;
+    \item Création des comptes utilisateurs initiaux ;
+    \item Mise en ligne de la version stable ;
+    \item Formation du personnel médical et administratif.
+\end{itemize}
+
+\newpage  
+\section*{Exigences techniques}  
+\addcontentsline{toc}{section}{Exigences techniques}  
+
+\begin{longtable}{|p{5cm}|p{10cm}|}  
+\hline  
+\textbf{Élément} & \textbf{Spécifications} \\  
+\hline  
+Architecture & Client-serveur, API RESTful. \\  
+\hline  
+Front-end & ReactJS (Web), Flutter (Mobile). \\  
+\hline  
+Back-end & Django (Python) ou Node.js. \\  
+\hline  
+Base de données & PostgreSQL ou MongoDB. \\  
+\hline  
+Chatbot & IA conversationnelle basée sur NLP (Natural Language Processing). \\  
+\hline  
+Sécurité & Chiffrement SSL, gestion des rôles, authentification à deux facteurs (2FA). \\  
+\hline  
+Hébergement & Cloud sécurisé (AWS, Azure, OVH). \\  
+\hline  
+Conformité & RGPD / HIPAA. \\  
+\hline  
+Charte graphique & Bleu et blanc (interfaces Figma, Web, Mobile). \\  
+\hline  
+Interopérabilité & API ouverte pour futurs modules. \\  
+\hline  
+\end{longtable}  
+
+\end{document}
